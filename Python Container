@@ -36,16 +36,3 @@ COPY . /app/
 EXPOSE 5000
 CMD ["python" , "app.py"]
 
-
-
-# Instruction to Use:
-
--To build Dockerfile :
-docker build -t imgname .
--To check whether image is created using Dockerfile :
-docker images
--To launch a container using image of this Dockerfile :
-docker run -d -p80:5000 --name pythoncontainer imgname
--To check whether container is created using image :
-docker ps
--Here the port 80 is port of EC2 instance whereas port 5000 is port of python container
